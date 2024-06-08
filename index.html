@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyal Sin Ko Ko - Portfolio</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #00FF00;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            background-color: #1f1f1f; /* Dark background */
+            color: #ccc; /* Light text color */
         }
+        /* Header Styles */
         header {
             background-color: #000;
-            color: #00FF00;
+            color: #fff;
             padding: 30px 0;
             text-align: center;
         }
+        /* Navigation Styles */
         nav {
             background-color: #000;
             display: flex;
@@ -28,17 +28,26 @@
             padding: 10px 0;
         }
         nav a {
-            color: #00FF00;
+            color: #ccc;
             margin: 0 15px;
             text-decoration: none;
             font-size: 18px;
+            transition: color 0.3s ease; /* Smooth color transition */
         }
+        nav a:hover {
+            color: #00FF00; /* Green color on hover */
+        }
+        /* Container Styles */
         .container {
             padding: 20px;
             max-width: 800px;
             margin: auto;
-            flex: 1;
+            background-color: #333; /* Dark background for content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Ensure container's children don't overflow */
         }
+        /* Section Styles */
         .section {
             margin-bottom: 40px;
         }
@@ -46,19 +55,19 @@
             border-bottom: 2px solid #00FF00;
             padding-bottom: 10px;
             margin-bottom: 20px;
+            color: #00FF00; /* Light green color for section headings */
         }
-        .contact-links a {
-            display: block;
-            margin-bottom: 10px;
-            color: #00FF00;
-            text-decoration: none;
+        .section p {
+            color: #ccc; /* Light text color for section text */
         }
+        /* Footer Styles */
         footer {
             text-align: center;
             padding: 20px 0;
             background-color: #000;
-            color: #00FF00;
+            color: #ccc;
         }
+        /* Profile Image Styles */
         .profile-img {
             display: block;
             margin: 0 auto;
@@ -67,13 +76,32 @@
             height: 200px;
             object-fit: cover;
             margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+        /* PDF Link Styles */
         .pdf-link {
             color: #00FF00;
             text-decoration: underline;
-            display: block;
+            display: inline-block;
             margin-top: 10px;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .pdf-link:hover {
+            color: #fff; /* White color on hover */
+        }
+        /* Contact Styles */
+        .contact-links a {
+            color: #fff; /* White color for contact links */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .contact-links a:hover {
+            color: #00FF00; /* Light green color on hover */
+        }
+        /* Separator Styles */
+        .separator {
+            color: #ccc;
+            margin: 0 5px; /* Adjust the spacing */
         }
     </style>
 </head>
@@ -86,7 +114,7 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#education">Education</a>
-        <a href="#Certificates">Certificates</a>
+        <a href="#certificates">Certificates</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#ideas">Ideas</a>
@@ -97,30 +125,36 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <img src="" alt="Kyal Sin Ko Ko" class="profile-img">
-            <p>Hello there! I'm Kyal Sin Ko Ko, also known as Kevin, a 15-year-old student currently pursuing my NCC Level 3 Diploma in Computing. With a passion for innovation and learning, I explore various fields including cooking, flying, programming, AI, and more. I'm an enthusiastic learner, always eager to soak up new skills and concepts quickly. While I'm adept at flying a Boeing 747 and knowledgeable in international laws and first aid, I sometimes find myself feeling a bit awkward when conversing with girls.</p>
+            <img src="profile.jpg" alt="Kyal Sin Ko Ko" class="profile-img">
+            <p>Hello there! I'm Kyal Sin Ko Ko, also known as Kevin, a student passionate about innovation and learning. I'm currently pursuing my NCC Level 3 Diploma in Computing. With interests ranging from programming to space exploration, I'm always eager to explore new horizons.</p>
             <a href="http://github.com/kevin-jus" class="pdf-link" target="_blank">My GitHub Profile</a>
         </section>
+        
         <section id="education" class="section">
             <h2>Education Background</h2>
-            <p><strong>>Myanmar government school</strong></p>
+            <p><strong>Myanmar Government School</strong></p>
             <p>From KG to Grade-8</p>
-            <p><strong>>UP International Academy</strong></p>
+            <p><strong>UP International Academy</strong></p>
             <p>Grade-9 (Pearson Curriculum)</p>
             <p><strong>Y-Max University</strong></p>
-            <p>University Foundation Program and NCC Level 3 Dploma in Computing</p>
-            <p><strong>>Mastercard Cybersecurity virtual experience program on Forage - June 2024</strong></p>
+            <p>University Foundation Program and NCC Level 3 Diploma in Computing</p>
+            <p><strong>Mastercard Cybersecurity Virtual Experience Program on Forage - June 2024</strong></p>
             <p>Completed a job simulation where I served as an analyst on Mastercard’s Security Awareness Team</p>
             <p>Helped identify and report security threats such as phishing</p>
             <p>Analyzed and identified which areas of the business needed more robust security training and implemented training courses and procedures for those teams</p>
         </section>
-        <section id="Certificates" class="section">
-            <h2>Certificates and relavent files</h2>
+        
+        <section id="certificates" class="section">
+            <h2>Certificates and Relevant Files</h2>
             <a href="certificate.html" class="pdf-link" target="_blank">View Certificates</a>
+            <span class="separator">|</span>
             <a href="transcript.jpg" class="pdf-link" target="_blank">View Transcript of Pre-IGCSE</a>
+            <span class="separator">|</span>
             <a href="Personal Statement.pdf" class="pdf-link" target="_blank">View Personal Statement</a>
+            <span class="separator">|</span>
             <a href="Kyal Sin.pdf" class="pdf-link" target="_blank">View Resume</a>
         </section>
+        
         <section id="experience" class="section">
             <h2>Experience</h2>
             <p><strong>Internship at Jobdoh:</strong> As an AI developer intern, I spent a month conducting extensive AI research and developing various programs. This invaluable experience allowed me to apply theoretical knowledge to real-world problems and further ignited my interest in artificial intelligence.</p>
@@ -153,6 +187,7 @@
             <p>You can reach me via:</p>
             <div class="contact-links">
                 <a href="mailto:sinkokokyal983@gmail.com">Email: sinkokokyal983@gmail.com</a>
+                <span class="separator">|</span>
                 <a href="tel:+959684663955">Phone: +959684663955 (Viber, Phone Call, Whatsapp and Telegram)</a>
             </div>
         </section>
