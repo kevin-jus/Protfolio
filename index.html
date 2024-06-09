@@ -103,6 +103,30 @@
             color: #ccc;
             margin: 0 5px; /* Adjust the spacing */
         }
+        .spinner {
+  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+}
+
+.spinner1 {
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
     </style>
 </head>
 <body>
@@ -125,7 +149,11 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <img src="Data_Mavericks-Kyal_Sin.jpg" alt="Kyal Sin Ko Ko" class="profile-img">
+            <div class="spinner">
+                <div class="spinner1">
+                     <img src="Data_Mavericks-Kyal_Sin.jpg" alt="Kyal Sin Ko Ko" class="profile-img">
+                </div>
+            </div>
             <p>Hello there! I'm Kyal Sin Ko Ko, also known as Kevin, a student passionate about innovation and learning. I'm currently pursuing my NCC Level 3 Diploma in Computing. With interests ranging from programming to space exploration, I'm always eager to explore new horizons.</p>
             <a href="http://github.com/kevin-jus" class="pdf-link" target="_blank">My GitHub Profile</a>
         </section>
