@@ -67,16 +67,46 @@
             background-color: #000;
             color: #ccc;
         }
-        /* Profile Image Styles */
-        .profile-img {
-            display: block;
-            margin: 0 auto;
+        /* Spinner Styles */
+        .spinner {
+            position: relative;
+            background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+            width: 220px;
+            height: 220px;
+            animation: spinning82341 1.7s linear infinite;
             border-radius: 50%;
+            filter: blur(1px);
+            box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner1 {
+            background-color: rgb(36, 36, 36);
             width: 200px;
             height: 200px;
+            border-radius: 50%;
+            filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes spinning82341 {
+            to {
+                transform: rotate(360deg);
+            }
         }
         /* PDF Link Styles */
         .pdf-link {
@@ -103,30 +133,6 @@
             color: #ccc;
             margin: 0 5px; /* Adjust the spacing */
         }
-        .spinner {
-  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
-  width: 100px;
-  height: 100px;
-  animation: spinning82341 1.7s linear infinite;
-  text-align: center;
-  border-radius: 50px;
-  filter: blur(1px);
-  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
-}
-
-.spinner1 {
-  background-color: rgb(36, 36, 36);
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  filter: blur(10px);
-}
-
-@keyframes spinning82341 {
-  to {
-    transform: rotate(360deg);
-  }
-}
     </style>
 </head>
 <body>
@@ -151,7 +157,7 @@
             <h2>About Me</h2>
             <div class="spinner">
                 <div class="spinner1">
-                     <img src="Data_Mavericks-Kyal_Sin.jpg" alt="Kyal Sin Ko Ko" class="profile-img">
+                    <img src="Data_Mavericks-Kyal_Sin.jpg" alt="Kyal Sin Ko Ko" class="profile-img">
                 </div>
             </div>
             <p>Hello there! I'm Kyal Sin Ko Ko, also known as Kevin, a student passionate about innovation and learning. I'm currently pursuing my NCC Level 3 Diploma in Computing. With interests ranging from programming to space exploration, I'm always eager to explore new horizons.</p>
